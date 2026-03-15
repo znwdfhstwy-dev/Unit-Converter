@@ -101,6 +101,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media(max-width: 600px) {
+    body {
+        min-width: 30vh;
+        margin: auto;
+    }
     .flex-container {
         flex-direction: column;
         width: 90%;
