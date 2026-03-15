@@ -1,0 +1,130 @@
+html, body {
+    min-height: 100vh;
+    padding: 0;
+    background: conic-gradient(#3503fc, #40929d, #7c983e, #ccdc6f, #fc6f03, #8a160b, #bf0814, #3503fc);
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+
+
+.title {
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ margin: auto;
+ background-color: rgba(255, 255, 255, 0.075);
+ backdrop-filter: blur(8px);
+ width: 500px;
+border-radius: 25px;
+font-family: poppins, sans-serif;
+font-size: 40px;
+text-shadow: 0 0 2px white;
+}
+
+.flex-container {
+    margin: 50px auto;
+    width: 900px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background-color: rgba(0, 195, 255, 0.399);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.flex-container .card {
+    background: rgba(48, 32, 86, 0.37);
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    border-radius: 15px;
+    padding: 0 5px 0 5px;
+    flex-direction: column;
+}
+
+.flex-container .card p {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.flex-container .card h2 {
+    flex: 1;                   
+    display: flex;
+    align-items: center;       
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30pt;
+    flex-grow: 1;
+    color: white;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
+    flex: 1;
+    
+}
+
+.convertBtns {
+    cursor: pointer;
+    margin-top: 10px;
+    min-height: 40px;
+    min-width: 120px;
+    text-align: center;
+    background-color: #ffffff2b;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
+    font-size: 10pt;
+    flex: 1;
+    
+}
+
+.input-el{
+    min-height: 35px;
+    min-width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+@media(max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        gap: 1em;
+    margin-left: 65px;
+    }
+    .flex-container .card {
+        height: auto;
+    }
+    .title {
+        margin: auto;
+    }
+    .input-el {
+        width: 90%;
+        height: 40px;
+    }
+    .convertBtns {
+        width: 90%;
+        height: 40px;
+    }
+}
+
+
+
+
+
