@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     background: conic-gradient(#3503fc, #40929d, #7c983e, #ccdc6f, #fc6f03, #8a160b, #bf0814, #3503fc);
     background-attachment: fixed;
-    margin-top: 30px;
+    margin: 0 auto;
 }
 
 
