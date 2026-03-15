@@ -1,14 +1,3 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js"
-import { getDatabase } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js"
-
-const firebaseConfig = {
-    databaseURL: "https://switch-units-default-rtdb.europe-west1.firebasedatabase.app/"
-}
-const app = initializeApp(firebaseConfig)
-const database = getDatabase(app)
-
-console.log(firebaseConfig)
-
 const lengthEl = document.getElementById("length")
 const volumeEl = document.getElementById("volume")
 const massEl = document.getElementById("mass")
